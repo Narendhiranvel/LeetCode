@@ -21,7 +21,7 @@ public class LongestRepeatingCharReplacement {
 			maxCount = Math.max(maxCount, charCount[currentChar - 'A']);
 			
 			if(end - start +1 - maxCount > k) {
-				charCount[s.charAt(start)] --;
+				charCount[s.charAt(start) - 'A'] --;
 				start++;
 			}
 			maxLen = Math.max(maxLen, end - start + 1);
